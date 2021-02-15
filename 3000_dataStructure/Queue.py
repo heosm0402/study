@@ -7,7 +7,7 @@ class ListQueue():
     def dequeue(self):
         if len(self.queue) == 0:
             return -1
-        return self.queue.pop(0)
+        return self.queue.pop(-1)
 
     def enqueue(self, n):
         self.queue.append(n)
